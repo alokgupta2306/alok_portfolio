@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alok Gupta - MERN Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Alok<span>Gupta</span></a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Alok Gupta</span></h1>
+                <h2 class="hero-subtitle">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h2>
+                <p class="hero-description">
+                    Passionate MERN Stack Developer with expertise in UI/UX design and AI tools. 
+                    Creating innovative solutions that blend creativity with technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    <a href="assets/resume/Alok_resume.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/alokgupta2306" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Visit my GitHub profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="http://www.linkedin.com/in/alok-gupta-b0a89536b" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Connect with me on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="alokgupta7208@gmail.com" class="social-icon" aria-label="Send me an email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img id="heroImage" src="assets/alok_image-light.png" alt="Alok Gupta">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a recent B.Sc. IT graduate from Navneet College with a passion for creating 
+                        innovative digital solutions. My journey in technology is driven by curiosity and 
+                        a love for problem-solving.
+                    </p>
+                    <p>
+                        With expertise in the MERN stack and modern development tools, I specialize in 
+                        building responsive web applications and mobile solutions. I'm also deeply interested 
+                        in UI/UX design and leveraging AI tools to enhance productivity.
+                    </p>
+                    <p>
+                        Beyond coding, I'm a creative individual who enjoys sketching, painting, and playing 
+                        guitar. I believe in the perfect blend of technical skills and creativity to build 
+                        exceptional user experiences.
+                    </p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="stat-number" data-target="9.5">0</h3>
+                        <p class="stat-label">Final CGPA</p>
+                        <span class="stat-detail">Improved from 7.60</span>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3 class="stat-number" data-target="4">0</h3>
+                        <p class="stat-label">Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-code"></i></div>
+                        <h3 class="stat-number" data-target="10">0</h3>
+                        <p class="stat-label">Technologies</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-robot"></i></div>
+                        <h3 class="stat-number" data-target="5">0</h3>
+                        <p class="stat-label">AI Tools Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5 skill-icon"></i>
+                            <p class="skill-name">HTML5</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt skill-icon"></i>
+                            <p class="skill-name">CSS3</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js skill-icon"></i>
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-react skill-icon"></i>
+                            <p class="skill-name">React.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-mobile-alt skill-icon"></i>
+                            <p class="skill-name">Flutter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="category-title">Backend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-node-js skill-icon"></i>
+                            <p class="skill-name">Node.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-server skill-icon"></i>
+                            <p class="skill-name">Express.js</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-plug skill-icon"></i>
+                            <p class="skill-name">REST API</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="skill-category">
+                    <h3 class="category-title">Database</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-database skill-icon"></i>
+                            <p class="skill-name">MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Version Control</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt skill-icon"></i>
+                            <p class="skill-name">Git</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github skill-icon"></i>
+                            <p class="skill-name">GitHub</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-fire skill-icon"></i>
+                            <p class="skill-name">Firebase</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-figma skill-icon"></i>
+                            <p class="skill-name">Figma</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-android skill-icon"></i>
+                            <p class="skill-name">Android Studio</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Tools -->
+                <div class="skill-category ai-tools">
+                    <h3 class="category-title">AI & Productivity Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fas fa-brain skill-icon"></i>
+                            <p class="skill-name">ChatGPT</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-robot skill-icon"></i>
+                            <p class="skill-name">Claude AI</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-gem skill-icon"></i>
+                            <p class="skill-name">Gemini</p>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-magic skill-icon"></i>
+                            <p class="skill-name">Prompt Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: NSS Setu -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/NSS-Logo.jpeg" alt="NSS Setu Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View NSS Setu code on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">NSS Setu</h3>
+                        <p class="project-description">
+                            Educational mobile application designed for NSS activities with event tracking, 
+    content modules, and user engagement features. This was developed as a college 
+    final year project and is currently a work in progress with ongoing enhancements 
+    and feature additions being implemented.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener noreferrer">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Task Manager -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/curd.jpeg" alt="Task Manager Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mongodb-to-do.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/alokgupta2306/todo-frontend" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Task Manager code on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Manager (MERN)</h3>
+                        <p class="project-description">
+                            Full-stack task management application with user authentication, CRUD operations, 
+                            and real-time updates for efficient task tracking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Portfolio -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/portfolio-image.jpg" alt="Portfolio Project">
+                        
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Portfolio Website</h3>
+                        <p class="project-description">
+                            Personal portfolio website showcasing projects, skills, and experience with 
+                            modern design, animations, and dark mode support.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: MERN Authentication -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/mern-stack-auth.jpeg" alt="MERN Authentication Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://mern-basic.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View MERN Authentication live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/alokgupta2306/MERN-Stack-Project-Basic-" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View MERN Authentication code on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MERN Stack with Authentication</h3>
+                        <p class="project-description">
+                            Secure full-stack application featuring user authentication with JWT tokens, 
+                            password encryption, protected routes, and session management for enhanced security.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">Authentication</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Visitor Pass Management -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/visitor-pass-management.jpg" alt="Visitor Pass Management Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Visitor Pass Management live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer" aria-label="View Visitor Pass Management code on GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">MERN Stack Visitor Pass Management System</h3>
+                        <p class="project-description">
+                            Complete visitor management solution with digital pass generation, real-time tracking, 
+check-in/check-out functionality, and comprehensive reporting dashboard. This is an 
+ongoing project currently in active development, with full completion expected soon. 
+The system will streamline visitor workflows, enhance security protocols, and provide 
+detailed analytics for administrative oversight.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">QR Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2024 – Apr 2024</div>
+                        <h3 class="timeline-title">Mobile App Developer</h3>
+                        <h4 class="timeline-company">NSS Setu (Academic Project)</h4>
+                        <ul class="timeline-description">
+                            <li>Designed and developed educational mobile application using Flutter</li>
+                            <li>Implemented event tracking and content modules with Firebase integration</li>
+                            <li>Conducted user feedback sessions to improve app usability</li>
+                            <li>Applied UI/UX design principles for enhanced user experience</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section class="education" id="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            <div class="education-grid">
+                <!-- Education -->
+                <div class="education-column">
+                    <h3 class="subsection-title">Education</h3>
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4>B.Sc. Information Technology</h4>
+                            <p class="edu-institution">Navneet College</p>
+                            <p class="edu-detail">CGPA: <span class="highlight-text">9.50</span></p>
+                            <p class="edu-achievement">🎯 Improved from 7.60 to 9.50</p>
+                        </div>
+                    </div>
+                    <div class="education-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4>Junior College</h4>
+                            <p class="edu-institution">Elphinstone College</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="education-column">
+                    <h3 class="subsection-title">Certifications</h3>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>AI Tools for Efficiency</h4>
+                            <p class="cert-issuer">BE10x Certification</p>
+                            <p class="cert-date">2025</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="cert-content">
+                            <h4>National Level Award</h4>
+                            <p class="cert-issuer">Kala Utsav Painting</p>
+                            <p class="cert-date">2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Code Section -->
+    <section class="beyond-code" id="beyond-code">
+        <div class="container">
+            <h2 class="section-title">Beyond Code</h2>
+            <p class="section-subtitle">Where creativity meets leadership</p>
+            <div class="beyond-grid">
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Creative Head</h3>
+                    <p>College Fest "Tarunya"</p>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Advisory Committee</h3>
+                    <p>Member</p>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Stage Decorator</h3>
+                    <p>NAAC Event</p>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>National Award</h3>
+                    <p>Painting Competition</p>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-guitar"></i>
+                    </div>
+                    <h3>Guitar Player</h3>
+                    <p>Musician</p>
+                </div>
+                <div class="beyond-card">
+                    <div class="beyond-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Sketching & Design</h3>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's build something amazing together!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>alokgupta7208@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7208567930</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/alokgupta2306" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="Visit my GitHub profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/alok-gupta-b0a89536b" target="_blank" rel="noopener noreferrer" class="contact-social-icon" aria-label="Connect with me on LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="alokgupta7208@gmail.com" class="contact-social-icon" aria-label="Send me an email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 Alok Gupta. All rights reserved.</p>
+                    <p class="footer-made">Made with JavaScript</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/alokgupta2306" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                        <i class="fab fa-github"></i>
+                    </a>              
+                    <a href="https://linkedin.com/in/alokgupta" target="_blank" rel="noopener noreferrer" aria-label="Connect with me on LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alokgupta2306@gmail.com" aria-label="Send me an email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
