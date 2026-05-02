@@ -589,6 +589,7 @@ section {
     color: var(--text-dark);
 }
 
+/* AI Tools Category */
 .ai-tools {
     background: linear-gradient(135deg, var(--light-green) 0%, var(--emerald-green) 100%);
     color: var(--cream);
@@ -608,6 +609,33 @@ section {
 }
 
 .ai-tools .skill-name {
+    color: var(--cream);
+}
+
+/* Soft Skills Category */
+.soft-skills {
+    background: linear-gradient(135deg, var(--deep-teal) 0%, #2a6666 100%);
+}
+
+.soft-skills .category-title {
+    color: var(--cream);
+}
+
+.soft-skills .skill-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--light-green);
+}
+
+.soft-skills .skill-card:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--cream);
+}
+
+.soft-skills .skill-icon {
+    color: var(--light-green);
+}
+
+.soft-skills .skill-name {
     color: var(--cream);
 }
 
@@ -1183,66 +1211,66 @@ section {
         padding: 2rem 0;
         box-shadow: 0 10px 30px var(--shadow);
     }
-    
+
     .nav-menu.active {
         left: 0;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hero-container {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.4rem;
     }
-    
+
     .hero-buttons {
         justify-content: center;
     }
-    
+
     .social-links {
         justify-content: center;
     }
-    
+
     .image-wrapper {
         width: 300px;
         height: 300px;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
-    
+
     .contact-content,
     .education-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .timeline {
         padding-left: 30px;
     }
-    
+
     .timeline::before {
         left: 10px;
     }
-    
+
     .timeline-dot {
         left: -28px;
     }
-    
+
     .footer-content {
         flex-direction: column;
         text-align: center;
@@ -1253,26 +1281,30 @@ section {
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .hero-subtitle {
         font-size: 1.2rem;
     }
-    
+
     .btn {
         padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
     }
-    
+
     .stats-grid,
     .skills-grid,
     .beyond-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .dark-mode-toggle {
         top: 80px;
         right: 20px;
         width: 45px;
         height: 45px;
+    }
+
+    .education-grid {
+        grid-template-columns: 1fr;
     }
 }
